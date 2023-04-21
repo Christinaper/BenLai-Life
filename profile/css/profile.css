@@ -1,0 +1,13 @@
+.my-container {
+    display: flex;
+}
+.my-content svg {
+    width: 200px;
+    height: 200px;
+}
+p>span {
+    margin-right: 20px;
+}
+p>span>span {
+    color: var(--color-theme-default);
+}

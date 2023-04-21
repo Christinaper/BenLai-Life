@@ -1,0 +1,93 @@
+.my-container {
+    display: flex;
+}
+.my-order {
+    margin-left: 20px;
+}
+.my-title {
+    height: 45px;
+    line-height: 45px;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.my-order-menu {
+    display: flex;
+    margin-top: 35px;
+}
+.my-order-menu .btn-order {
+    width: 135px;
+    line-height: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+.my-order-menu .btn-order.active {
+    color: var(--color-theme-default);
+    border: 2px solid var(--color-theme-default);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+table.order {
+    width: 970px;
+}
+table.order thead tr td {
+    text-align: center;
+    height: 40px;
+    background: aliceblue;
+}
+/* table.order tbody tr {
+} */
+table.order tbody tr td {
+    height: 45px;
+    background-color: #dbf1ec;
+    text-align: center;
+    position: relative;
+}
+table.order tbody tr td:nth-child(8) {
+    background-image: url(../img/delete2.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+table.order tbody tr td svg {
+    width: 400px;
+    height: 300px;
+    display: block;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+/* 边栏 */
+.my-aside {
+    width: 210px;
+    height: 800px;
+    /* border: 1px solid var(--color-info-default); */
+    border-radius: 5px;
+    /* background-color: salmon; */
+    flex-shrink: 0;
+    margin-top: 15px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.my-aside h5 {
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    color: var(--color-theme-default);
+}
+.my-aside p {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: var(--color-info-default);
+    padding: 0 20px;
+}
+.my-aside p.active {
+    height: 30px;
+    color: #1ba784;
+    background-color: #c5f4e8;
+    border-radius: 5px;
+}

@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+.banner-title {
+    height: 85px;
+    line-height: 85px;
+    background-color: #f8f9fd;
+}
+.banner-title>ul {
+
+}
+.banner-title>ul>li {
+    float: left;
+    margin-right: 5px;
+    width: 100px;
+    height: 85px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+}
+.banner-title>ul>li.search-icon {
+    /* background-color: #c1f377; */
+    background-color: #1ba784;
+    border-radius: 20px;
+    width: 208px;
+}
+.banner-title>ul>li.search-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.banner-title>ul>li.sort-item:hover {
+    background-color: #e3e4eb;
+}
+.active {
+    background-color: #e3e4eb;
+}
+.banner-title>ul>li svg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 8px;
+}
+li.sort-item.active.asc svg.up {
+    display: inline;
+}
+li.sort-item.active.desc svg.down {
+    display: inline;
+}
+.banner-title a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.banner-title>ul>li span {
+    color: #333;
+}
+.sort-item {
+
+}
+/* -------------------------------------------------------------- */
+.search form {
+    width: 208px;
+    height: 50px;
+    position: relative;
+}
+.search input {
+    outline: none;
+    border: 2px solid #f0eff2;
+    border-bottom: none;
+    width: 208px;
+    height: 50px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 16px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.search button {
+    background: aliceblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border-top: 4px solid cadetblue;
+    border-right: 4px solid cadetblue; */
+    border: 2px solid #f0eff2;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    cursor: pointer;
+}
+.main {
+    position: relative;
+    display: flex;
+}
+.wine-aside {
+    position: relative;
+    width: 208px;
+    /* height: 100%; */
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    flex-shrink:0;
+    border: 2px solid #f0eff2;
+    box-sizing: border-box;
+    background: url(../img/bg.jpg);
+}
+.wine-container {
+}
+.recommend-card {
+    width: 215px;
+    height: 350px;
+    float: left;
+    margin: 15px 16px;
+    background-color: #f8f9fd;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    padding: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.recommend-card:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.r-c-new {
+    /* background-color: #1ba784; */
+    /* background-image: url(../img/rec3.jpg); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 18px;
+}
+.r-c-great {
+    /* background-color: #1ba784; */
+    /* background-image: url(../img/rec2.jpg); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 18px;
+}
+/* .r-c-great:hover {
+
+} */
+.rec-card_img {
+    height: 215px;
+    width: 100%;
+}
+.rec-card_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* 左上、右上圆角 */
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.rec-card_info {
+    /* 左下、右下圆角 */
+    /* background-color: #1ba784; */
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 15px 15px;
+    font-size: 12px;
+}
+.rec-card_intro {
+    color: #6e6e73;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+    display: inline-block;
+}
+.rec-card_title {
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.rec-card_price {
+    color: #db7231;
+    font-size: 20px;
+    font-weight: 600;
+}
+.rec-card_oldprice {
+    font-size: 12px;
+    color: #6e6e73;
+    text-decoration: line-through;
+}

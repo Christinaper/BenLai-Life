@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    /* background-color: rgb(226, 252, 238); */
+}
+.list {
+    width: 820px;
+    /* border: 2px dashed slateblue; */
+}
+ul.list {
+    font-size: 0;
+}
+ul.list>li{
+    font-size: 14px;
+    display: flex;
+    border: 2px solid wheat;
+    border-left: none;
+    border-right: none;
+    /* justify-content: space-between; */
+}
+ul.list>li svg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+ul.list>li h3.error {
+    color: #d0021b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+.prof {
+    overflow: hidden;
+    height: 130px;
+    width: 100%;
+    background-color: var(--color-theme-default);
+    padding: 30px 35px;
+    color: wheat;
+    font-size: 16px;
+}   
+.prof p {
+    margin: 15px 0;
+}
+.option {
+    width: 200px;
+    /* height: 130px; */
+    background-color: crimson;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.option button {
+    border: 0;
+    cursor: pointer;
+    height: 32px;
+    border-bottom: 1px dashed crimson;
+}
+.add {
+    width: 820px;
+    height: 193.2px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    position: relative;
+}
+.add svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dialog {
+    display: none;
+    width: 740px;
+    height: 425px;
+    background-color: var(--color-theme-default);
+    border: 5px solid crimson;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    z-index: 999999;
+}
+.dialog h2 {
+    height: 40px;
+    border-bottom: 2px dashed rgb(205, 98, 90);
+    color: wheat;
+}
+.dialog span {
+    color: wheat;
+}
+.dialog form {
+    padding: 30px;
+    border-radius: 12px;
+    /* background: #d2f2f4; */
+}
+.dialog input, select{
+    min-width: 100px;
+    height: 30px;
+    margin: 12px 5px;
+    outline: none;
+    border: inset;
+}
+.dialog span {
+
+}
+.btn-container {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.btn-container button {
+    background: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.show {
+    display: block;
+}

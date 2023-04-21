@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3992832 */
+  src: url('iconfont.woff2?t=1681030288740') format('woff2'),
+       url('iconfont.woff?t=1681030288740') format('woff'),
+       url('iconfont.ttf?t=1681030288740') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bank-ny:before {
+  content: "\e6b8";
+}
+
+.icon-bank-zs:before {
+  content: "\e6b9";
+}
+
+.icon-bank-zg:before {
+  content: "\e6ba";
+}
+
+.icon-wechatpay:before {
+  content: "\e6bc";
+}
+
+.icon-alipay:before {
+  content: "\e6bd";
+}
+
+.icon-PayPal:before {
+  content: "\e6be";
+}
+
+.icon-UnionPay:before {
+  content: "\e6bf";
+}
+
+.icon-bottle:before {
+  content: "\eb7c";
+}
+
+.icon-box:before {
+  content: "\eb7d";
+}
+
+.icon-map:before {
+  content: "\eb7e";
+}
+
+.icon-treasure:before {
+  content: "\eb82";
+}
+
+.icon-badge:before {
+  content: "\eb83";
+}
+
+.icon-address:before {
+  content: "\eb87";
+}
+
+.icon-mobile:before {
+  content: "\eb9e";
+}
+
+.icon-gift:before {
+  content: "\ebc0";
+}
+
+.icon-mail:before {
+  content: "\ebd0";
+}
+
+.icon-security:before {
+  content: "\ebdb";
+}
+
+.icon-homeDelivery:before {
+  content: "\ebec";
+}
+
+.icon-coin:before {
+  content: "\ec05";
+}
+
+.icon-recharge:before {
+  content: "\ec09";
+}
+
+.icon-vip:before {
+  content: "\ec87";
+}
+
+.icon-halfStar:before {
+  content: "\e617";
+}
+
+.icon-Star:before {
+  content: "\e618";
+}
+
+.icon-right:before {
+  content: "\ebe6";
+}
+
+.icon-saletag:before {
+  content: "\ecab";
+}
+
+.icon-left:before {
+  content: "\edb4";
+}
+
+.icon-collection:before {
+  content: "\e657";
+}
+
+.icon-discount:before {
+  content: "\e612";
+}
+
+.icon-shengxian:before {
+  content: "\e606";
+}
+
+.icon-31phone:before {
+  content: "\e62d";
+}
+
+.icon-cart:before {
+  content: "\ebf1";
+}
+
+.icon-tick:before {
+  content: "\edb3";
+}
+
+.icon-payment:before {
+  content: "\ec08";
+}
+
+.icon-service:before {
+  content: "\ec8d";
+}
+
+.icon-tips:before {
+  content: "\ec94";
+}
+
+.icon-delivery:before {
+  content: "\eca8";
+}
+
+.icon-open:before {
+  content: "\eca9";
+}
+
+.icon-directSupply:before {
+  content: "\ece4";
+}
+
+.icon-lowtmp:before {
+  content: "\ecee";
+}
+
+.icon-check:before {
+  content: "\eca2";
+}
+

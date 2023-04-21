@@ -1,0 +1,187 @@
+
+/* 详情页 */
+.detail-container {
+    height: 550px;
+    /* background-color: rgb(240, 208, 208); */
+}
+.detail-breadcrumbs {
+    line-height: 50px;
+    color: var(--color-info-default);
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.detail-breadcrumbs .current {
+    color: var(--global-color);
+    font-weight: 600;
+}
+.detail-content {
+    height: 500px;
+    display: flex;
+}
+.detail-content-left {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-bg);
+    position: relative;
+}
+.detail-content-left-img {
+    width: 450px;
+    aspect-ratio: 1/1;
+    /* background-color: #f3f3f3; */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+}
+.detail-content-left-img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+}
+.detail-prev, .detail-next {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px;
+    box-shadow: 0 5px 10px -5px #49b665;
+}
+.detail-prev { left: -33px; }
+.detail-next { right: -30px; }
+.detail-prev svg, .detail-next svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+.detail-num {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    font-size: 14px;
+    color: var(--color-info-default);
+}
+.detail-content-right {
+    width: 50%;
+    height: 100%;
+    /* background-color: salmon; */
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.detail-tag-container {
+    
+}
+span.detail-tag {
+    display: inline-block;
+    background-color: var(--color-bg);
+    line-height: 45px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+span.detail-tag span:nth-child(1)::after {
+    content: '';
+    border: 1px solid var(--color-theme-default);
+    margin: 0 10px 0 10px;
+}
+/* 收藏 */
+.detail-tag-collection {
+    cursor: pointer;
+}
+/* 购物车 */
+.detail-tag-cart {
+    cursor: pointer;
+    position: relative;
+}
+.detail-tag-cart a {
+    text-decoration: none;
+    color: #000;
+}
+.detail-tag-cart-dot {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #eb2929;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    right: -24px;
+}
+.detail-tag-cart-dot::after {
+    /* content: '*';
+    color: #eb2929;
+    background-color: #eb2929;
+     */
+}
+.detail-content-right>ul>li h1 {
+    margin: 15px 0;
+}
+.detail-divide {
+    margin: 0 5px;
+    color: var(--color-info-default);
+}
+.detail-content-right>ul>li p.detail-sale {
+    line-height: 40px;
+}
+.detail-price-container {
+    margin-top: 20px;
+}
+.detail-content-right>ul>li .detail-discount {
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: #d7efdb;
+    border-radius: 12px;
+    padding: 1px 6px;
+    box-sizing: border-box;
+    position: relative;
+    color: #49b665;
+    /* font-size: 18px; */
+}
+.detail-content-right>ul>li .detail-discount svg {
+    font-size: 18px;
+    fill: #49b665;;
+    color: #49b665;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.detail-content-right>ul>li .detail-discount span {
+    float: right;
+}
+.detail-content-right>ul>li span.detail-oldPrice {
+    line-height: 40px;
+    text-decoration: line-through;
+    color: var(--color-info-default);
+    vertical-align: middle;
+}
+.detail-content-right>ul>li span.detail-price {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-theme-default);
+    line-height: 40px;
+    vertical-align: middle;
+}
+.detail-descriptions {
+    margin: 20px 0;
+    line-height: 35px;
+    color: var(--color-info-default);
+}
+.detail-descriptions h3{
+    color: var(--global-color);
+}
+.detail-descriptions>span.detail-descriptions-tag {
+    color: #49b665;
+    border: 1px solid #49b665;
+    padding: 2px;
+    font-size: 12px;
+    margin: 0 5px;
+}

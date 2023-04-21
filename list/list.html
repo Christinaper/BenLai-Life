@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/img/icon.png" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>镇店之宝</title>
+</head>
+<body>
+    <div class="banner-title">
+        <ul class="w">
+            <li class="search-icon">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="41" height="41" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44H38C39.1046 44 40 43.1046 40 42V6C40 4.89543 39.1046 4 38 4Z" fill="#000" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 16C28 17.3807 27.4404 18.6307 26.5355 19.5355C25.6307 20.4404 24.3807 21 23 21C20.2386 21 18 18.7614 18 16C18 13.2386 20.2386 11 23 11C25.7614 11 28 13.2386 28 16Z" fill="#000"/><path d="M30 23L26.5355 19.5355M26.5355 19.5355C27.4404 18.6307 28 17.3807 28 16C28 13.2386 25.7614 11 23 11C20.2386 11 18 13.2386 18 16C18 18.7614 20.2386 21 23 21C24.3807 21 25.6307 20.4404 26.5355 19.5355Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 30L31 30" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 36H24" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>   
+            <li class="sort-item active asc" data-key="id">
+                <span>默认</span>
+                <?xml version="1.0" encoding="UTF-8"?><svg class="up" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 9H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 16L13 8" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 8V42" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 19H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 29H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 39H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>            
+                <?xml version="1.0" encoding="UTF-8"?><svg class="down" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 8H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 41L6 33" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7V41" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 18H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 28H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 38H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>
+            <li class="sort-item" data-key="price">
+                <span>价格</span>
+                <?xml version="1.0" encoding="UTF-8"?><svg class="up" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 9H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 16L13 8" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 8V42" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 19H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 29H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 39H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>            
+                <?xml version="1.0" encoding="UTF-8"?><svg class="down" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 8H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 41L6 33" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7V41" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 18H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 28H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 38H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>
+            <li class="sort-item" data-key="sale">
+                <span>销量</span>
+                <?xml version="1.0" encoding="UTF-8"?><svg class="up" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 9H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 16L13 8" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 8V42" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 19H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 29H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 39H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>            
+                <?xml version="1.0" encoding="UTF-8"?><svg class="down" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 8H43" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 41L6 33" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7V41" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 18H39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 28H35" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 38H31" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>
+        </ul>
+    </div>
+    <div class="search w">
+        <form action="" name="search">
+            <input type="text" name="words" placeholder="搜索镇店之宝">
+            <button type="submit">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z" fill="#5f9ea0" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path d="M26.657 14.3431C25.2093 12.8954 23.2093 12 21.0001 12C18.791 12 16.791 12.8954 15.3433 14.3431" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.2216 33.2217L41.7069 41.707" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </form>
+    </div>
+    <div class="main w">
+        <div class="wine-aside"></div>
+        <ul class="wine-container w"></ul>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <iframe 
+            src="../common/pageFooter.html" 
+            frameborder="0" 
+            width="100%" 
+            height="496px"
+            scrolling="no"
+        >
+        </iframe>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

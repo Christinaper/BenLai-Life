@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    /* font-family: DingTalk; */
+    font-family: PuHui;
+}
+button, form, select, input {
+    font-family: PuHui;
+}
+ul {
+    list-style: none;
+}
+.w {
+    width: var(--w);
+    margin: 0 auto;
+}
+.tl {
+    min-width: var(--w);
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+iframe {
+    display: block;
+}
+.friut-container i {
+    float: left;
+    margin: 0 10px;
+}
+:root {
+    --w: 1200px;
+    --global-color: #333336;
+    --global-color-hover: #000000;
+    --global-header-height: 44px; /* header高度 */
+    --header-input-height: 50px; /* 输入框高度 */
+    --banner-menu-title-height: 45px; /* banner的menu栏高度 */
+    --color-theme-default: hsl(242, 55%, 82%); /* 主题色 */
+    --color-info-default: #7e8396; /* info默认色 */
+    --color-bg: #f3f3f3;
+    --color-borderLine-default: #e7e7e7; /* 分割线默认色 */
+}
+@font-face {
+    font-family: DingTalk;
+    src: url(../fonts/DingTalk_JinBuTi_Regular.ttf);
+}
+@font-face {
+    font-family: PuHui;
+    src: url(../fonts/Alibaba_PuHuiTi_2.0_65_Medium_65_Medium.ttf);
+}
+/* 头部板块（大） */
+.global-header-container {
+    /* 为什么原来的不写死 */
+    height: 180px; 
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+.global-header {
+    height: var(--global-header-height);
+    /* background-color: salmon; */
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+.global-nav {
+    font-size: 12px;
+    height: 100%;
+    line-height: var(--global-header-height);
+}
+.global-nav a {
+    text-decoration: none;
+    color: var(--global-color);
+}
+.g-nav-login a{
+    color: #b49105;
+}
+.g-nav-login a:hover{
+    color: #49C628;
+}
+.g-nav-login {
+    /* height: 100%; */
+    float: left;
+}
+.g-nav-address {
+    /* height: 100%; */
+    float: left;
+    margin: 0 25px;
+}
+.g-nav-address svg {
+    position: relative;
+    top: 3px;
+    left: 0; /* 必须写吗 */
+}
+.g-nav-address-input {
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18); */
+    background-color: #ffffff;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.g-nav-address-input:hover {
+    border: 1px solid #49C628;
+}
+.g-nav-menu {
+    /* height: 100%; */
+    float: right;
+}
+.g-nav-menu>ul {
+
+}
+.g-nav-menu>ul>li {
+    float: left;
+    margin: 0 15px;
+}
+.header-main {
+    height: 136px; /*  */
+    /* background-color: salmon; */
+}
+.header-main-logo {
+    height: 100%;
+    /* width: 352px; */
+    width: 150px;
+    float: left;
+    position: relative; /* 给img定位 */
+}
+.header-main-logo img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.header-main-right {
+    float: right;
+    line-height: 136px;
+}
+.header-main-right svg {
+    transform: translateY(5px);
+}
+/* ********************************** */
+.banner-title {
+    height: var(--banner-menu-title-height);
+    line-height: var(--banner-menu-title-height);
+    background-color: #1ba784;
+}
+.banner-title>ul {
+
+}
+.banner-title>ul>li {
+    float: left;
+    margin-right: 5px;
+    width: 100px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    text-align: center;
+}
+.banner-title>ul>li:hover {
+    background-color: #207f4c;
+}
+.banner-title a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* 分类栏 */
+.banner-t-aside {
+    width: 210px !important;
+    background-color: #207f4c;
+}

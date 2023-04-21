@@ -1,0 +1,47 @@
+input {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    background-color: #f6f8fa;
+    width: 280px;
+    height: 45px;
+    box-sizing: border-box;
+    margin: 10px 10px 0 10px;
+    font-family: PuHui;
+}
+.captcha-container {
+    position: relative;
+}
+button.btn-captcha {
+    cursor: pointer;
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    top: 15px;
+    right: 5px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: var(--color-theme-default);
+    font-family: puhui;
+}
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+input.agreement {
+    width: 15px;
+    height: 15px;
+}
+span.agreement-text {
+    margin-left: -9px;
+    display: inline;
+    color: var(--color-info-default);
+}
+.login-info {
+    width: 100%;
+    padding: 0 155px;
+    box-sizing: border-box;
+    position: relative;
+    top: 140px;
+}

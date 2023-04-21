@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font-family: DingTalk; */
+    font-family: PuHui;
+}
+:root {
+    --color-theme-default: #1ba784;
+    --color-info-default: #7e8396;
+    --color-borderLine-default: #e7e7e7;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* @font-face {
+    font-family: DingTalk;
+    src: url(../fonts/DingTalk_JinBuTi_Regular.ttf);
+}
+@font-face {
+    font-family: PuHui;
+    src: url(../fonts/Alibaba_PuHuiTi_2.0_65_Medium_65_Medium.ttf);
+} */
+.cart-title {
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--color-theme-default);
+    color: #fff;
+}
+.cart-title h3 {
+    display: inline;
+    margin: 0 10px 0 20px;
+}
+.checkbox {
+    border: 1px solid black;
+    color: transparent;
+}
+.checkbox:hover {
+    /* color: #000; */
+}
+.checkbox.checked {
+    background-color: var(--color-theme-default);
+    color: #fff;
+    border: 1px solid var(--color-theme-default);
+    border-radius: 4px;
+}
+table.cart thead{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid var(--color-theme-default);
+    background: aliceblue;
+}
+table.cart thead tr {
+    
+}
+/* table.cart thead tr:first-child {
+    border: 1px solid black;
+} */
+table.cart thead tr td {
+    text-align: center;
+    font-weight: 600;
+}
+table.cart tbody {
+    
+}  
+table.cart tbody tr {
+    height: 100px;
+}  
+table.cart tbody tr td {
+    text-align: center;
+    padding: 20px;
+}
+table.cart tbody tr td img{
+    width: 60px;
+    height: 60px;
+}
+table.cart tbody tr td.cart-listTitle {
+    width: 500px;
+    text-align: start;
+}
+table.cart tbody tr td.cart-listTitle p.stock {
+    color: var(--color-info-default);
+    font-size: 12px;
+}
+table.cart tbody tr td.cart-listTitle span.tag {
+    display: inline-block;
+    height: 28px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+table.cart tbody tr td.cart-listTitle span.shipping {
+    background-color: #f0f5f5;
+    color: #759693;
+}
+table.cart tbody tr td.cart-listTitle span.merchant {
+    margin-left: 10px;
+    background-color: #f5f3f1;
+    color: #94896a;
+}
+table.cart span.shipping svg, table.cart span.merchant svg {
+    float: left;
+    margin: 2px 2px 0 2px;
+}
+table.cart tbody tr td button.btn-decrease, .btn-increase {
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+table.cart tbody tr td button.btn-decrease:disabled, .btn-increase:disabled {
+    cursor: not-allowed;
+}
+table.cart tbody tr td span.count {
+    display: inline-block;
+    width: 25px;
+}
+table.cart tbody tr td.total-sub {
+    color: var(--color-theme-default);
+    font-weight: 600;
+}
+table.cart tbody tr td button.btn-delete {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #fff;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    background-image: url(../img/delete2.svg);
+}
+/* table.cart tbody tr td button.btn-delete svg{
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+} */
+table.cart tfoot {
+    height: 40px;
+} 
+table.cart tfoot tr td {
+    border-top: 2px solid var(--color-info-default);
+    height: 60px;
+}
+table.cart tfoot tr td div.amount-wrapper {
+    float: left;
+    line-height: 40px;
+}
+table.cart tfoot tr td button.btn-settle {
+    float: right;
+    width: 80px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-theme-default);
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+} 
+table.cart tfoot tr td button.btn-settle a {
+    text-decoration: none;
+    color: #fff;
+}
+table.cart tfoot tr td button.btn-settle svg {
+    float: right;
+    margin-right: 8px;
+}
+table.cart tfoot tr td div.total-wrapper {
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+} 
+table.cart tfoot tr td div.amount-wrapper span.amount {
+    color: var(--color-theme-default);
+    font-weight: 600;
+}
+table.cart tfoot tr td div.total-wrapper span.total {
+    color: var(--color-theme-default);
+    font-weight: 600;
+    font-size: 18px;
+}
