@@ -7,4 +7,3 @@ content:
 4. iframe reuse bottom content: In order to improve page loading speed and user experience, this project uses iframe technology to reuse the bottom public content in different pages.
 5. Sorting: Users can sort the products according to different conditions, such as price, sales volume, rating, etc.
 6. Dynamic loading of image resources: In order to save network traffic and improve page performance, this project uses the IntersectionObserver API to achieve lazy loading of images. Only when the image scrolls to the specified position will it request to load the image resource.
-???
